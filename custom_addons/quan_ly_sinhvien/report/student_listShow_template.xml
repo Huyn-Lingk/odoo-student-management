@@ -1,0 +1,33 @@
+<odoo>
+  <template id="student_list_template" name="Student List">
+    <t t-call="web.external_layout">
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">📋 Danh sách sinh viên</h2>
+        <table class="table table-striped table-bordered shadow-sm rounded">
+          <thead class="thead-dark">
+            <tr>
+              <th>Mã SV</th>
+              <th>Họ tên</th>
+              <th>Ngày sinh</th>
+              <th>Giới tính</th>
+              <th>Email</th>
+              <th>Lớp</th>
+            </tr>
+          </thead>
+          <tbody>
+            <t t-foreach="students" t-as="student">
+              <tr>
+                <td><t t-esc="student.student_code"/></td>
+                <td><t t-esc="student.name"/></td>
+                <td><t t-esc="student.birth_date"/></td>
+                <td><t t-esc="student.gender"/></td>
+                <td><t t-esc="student.email"/></td>
+                <td><t t-esc="student.class_name"/></td>
+              </tr>
+            </t>
+          </tbody>
+        </table>
+      </div>
+    </t>
+  </template>
+</odoo>
