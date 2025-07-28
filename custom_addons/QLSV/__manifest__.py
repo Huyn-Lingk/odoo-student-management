@@ -1,0 +1,23 @@
+{
+    'name': 'Quản Lý Sinh Viên',
+    'version': '1.0',
+    'summary': 'Ứng dụng quản lý sinh viên, lớp học, môn học và điểm số',
+    'sequence': 10,
+    'description': """Quản lý sinh viên, lớp học, môn học và bảng điểm.""",
+    'author': 'Huyn',
+    'category': 'Education',
+    'depends': ['base'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/class_view.xml',  
+        'views/student_view.xml',
+        'views/subject_view.xml',
+        'views/grade_view.xml',
+        'views/menu_view.xml',
+        'views/student_pdf_template.xml',
+        'reports/report_student_wizard_view.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}

@@ -1,0 +1,22 @@
+<odoo>
+    <record id="view_hide_about_settings" model="ir.ui.view">
+        <field name="name">res.config.settings.hide.about</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Cách 1: Xoá hẳn khối about -->
+            <xpath expr="//div[@id='about']" position="replace">
+                <!-- empty = xoá -->
+            </xpath>
+
+            <!-- Cách 2: Ẩn bằng invisible -->
+            <!--
+            <xpath expr="//div[@id='about']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            -->
+
+        </field>
+    </record>
+</odoo>

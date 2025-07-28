@@ -1,0 +1,40 @@
+<odoo>
+    <data>
+
+        <!-- Main Menu -->
+        <menuitem id="qlsv_menu_root"
+                  name="Quản lý sinh viên"
+                  sequence="1"/>
+
+        <!-- Submenus -->
+        <menuitem id="menu_class"
+                  name="Lớp học"
+                  parent="qlsv_menu_root"
+                  action="action_class"
+                  sequence="1"/>
+
+        <menuitem id="menu_student"
+                  name="Sinh viên"
+                  parent="qlsv_menu_root"
+                  action="action_student"
+                  sequence="2"/>
+
+        <menuitem id="menu_subject"
+                  name="Môn học"
+                  parent="qlsv_menu_root"
+                  action="action_subject"
+                  sequence="3"/>
+
+        <menuitem id="menu_grade"
+                  name="Bảng điểm"
+                  parent="qlsv_menu_root"
+                  action="action_grade"
+                  sequence="4"/>
+
+        <menuitem id="menu_student_report_wizard"
+                  name="In báo cáo sinh viên"
+                  parent="qlsv_menu_root"
+                  action="action_open_student_report_wizard"/>
+        
+    </data>
+</odoo>

@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <!-- list View -->
+        <record id="view_subject_list" model="ir.ui.view">
+            <field name="name">qlsv.subject.list</field>
+            <field name="model">qlsv.subject</field>
+            <field name="arch" type="xml">
+                <list string="Danh sách môn học">
+                    <field name="code"/>
+                    <field name="name"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="view_subject_form" model="ir.ui.view">
+            <field name="name">qlsv.subject.form</field>
+            <field name="model">qlsv.subject</field>
+            <field name="arch" type="xml">
+                <form string="Thông tin môn học">
+                    <sheet>
+                        <group>
+                            <field name="code"/>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_subject" model="ir.actions.act_window">
+            <field name="name">Môn học</field>
+            <field name="res_model">qlsv.subject</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

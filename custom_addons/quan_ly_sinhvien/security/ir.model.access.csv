@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id,perm_read,perm_write,perm_create,perm_unlink
-access_quanlysinhvien_student,access.quanlysinhvien.student,model_quanlysinhvien_student,,1,1,1,1
-access_quanlysinhvien_grade,access.quanlysinhvien.grade,model_quanlysinhvien_grade,,1,1,1,1
-access_quanlysinhvien_subject,access.quanlysinhvien.subject,model_quanlysinhvien_subject,,1,1,1,1

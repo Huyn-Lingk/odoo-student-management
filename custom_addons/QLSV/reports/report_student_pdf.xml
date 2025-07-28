@@ -1,0 +1,10 @@
+<odoo>
+    <record id="student_report_pdf" model="ir.actions.report">
+        <field name="name">Báo cáo sinh viên</field>
+        <field name="model">qlsv.report_student_wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">qlsv.student_report_pdf_template</field> <!-- phải trùng với id của template -->
+        <field name="report_file">qlsv.student_report_pdf_template</field>
+        <field name="print_report_name">'Báo Cáo Sinh Viên - %s' % (object.id)</field>
+    </record>
+</odoo>

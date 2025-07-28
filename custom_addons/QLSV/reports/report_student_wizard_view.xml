@@ -1,0 +1,25 @@
+<odoo>
+    <record id="view_report_student_wizard_form" model="ir.ui.view">
+        <field name="name">qlsv.report.student.wizard.form</field>
+        <field name="model">qlsv.report_student_wizard</field>
+        <field name="arch" type="xml">
+            <form string="Chọn sinh viên">
+                <group>
+                    <field name="student_code" widget="many2many_tags" options="{'no_create': True}"/>
+                </group>
+                <footer>
+                    <button name="action_select_all_students" string="Chọn tất cả" type="object" class="btn-secondary"/>
+                    <button name="action_deselect_all_students" string="Bỏ chọn tất cả" type="object" class="btn-secondary"/>
+                    <button name="action_print_pdf" string="In PDF" type="object" class="btn-primary"/>
+                    <button string="Đóng" special="cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_open_student_report_wizard" model="ir.actions.act_window">
+        <field name="name">In báo cáo sinh viên</field>
+        <field name="res_model">qlsv.report_student_wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>
